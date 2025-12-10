@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "http://getgianmarco.com"
 languageCode = "en-us"
 title = "Gianmarco Picarella"
 theme = []
@@ -8,5 +8,5 @@ theme = []
   subtitle = "Software Engineer at Google; Developer of Mario+Rabbids: Sparks of Hope; MS in Computer Science; Based in Warsaw, PL; From Anzio, IT."
   github = "https://github.com/gianmarcopicarella"
   linkedin = "https://www.linkedin.com/in/gianmarcopicarella/"
-  cv = "http://localhost:1313/picarella_gianmarco_cv.pdf"
+  cv = "http://getgianmarco.com/picarella_gianmarco_cv.pdf"
   blog = "https://gianmarcopicarella.substack.com/"
