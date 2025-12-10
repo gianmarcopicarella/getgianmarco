@@ -28,4 +28,23 @@
 <article>
     {{ .Content }}
 </article>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ .Site.Params.Author }}",
+    "url": "{{ .Site.BaseURL }}",
+    "image": "{{ .Site.BaseURL }}images/profile.jpg",
+    "sameAs": [
+        "{{ .Site.Params.github }}",
+        "{{ .Site.Params.linkedin }}",
+        "{{ .Site.Params.substack }}"
+      ],
+    "jobTitle": "Software Engineer",
+    "description": "{{ .Site.Params.description }}",
+    "knowsAbout": ["Software engineering", "C++", "Low-level programming", "Anzio", "Italy", "Sapienza", "Utrecht"]
+}
+</script>
+
 {{ end }}
