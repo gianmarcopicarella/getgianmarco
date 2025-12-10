@@ -10,3 +10,21 @@ theme = []
   linkedin = "https://www.linkedin.com/in/gianmarcopicarella/"
   cv = "https://www.getgianmarco.com/picarella_gianmarco_cv.pdf"
   blog = "https://www.gianmarcopicarella.substack.com/"
+
+uglyURLs = false
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+  
+[minify.tdewolff.html]
+  keepComments = false
+  keepConditionalComments = false
+  keepDefaultAttrVals = true
+  keepDocumentTags = true
+  keepEndTags = true
+  keepQuotes = false
+  keepWhitespace = false
+
+enableRobotsTXT = true
