@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="profile-header">
+    <img src="/images/profile.jpg" alt="{{ .Site.Params.Author }}" class="profile-img">
+    
+    <div class="profile-details">
+        <h1>{{ .Site.Params.Author }}</h1>
+        <p class="subtitle">{{ .Site.Params.Subtitle }}</p>
+        
+        <ul class="social-links">
+            <li>
+                <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener">GitHub</a>
+            </li>
+            <li>
+                <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+            </li>
+            <li>
+                <a href="{{ .Site.Params.cv }}" target="_blank" rel="noopener">CV</a>
+            </li>
+            <li>
+                <a href="{{ .Site.Params.blog }}" target="_blank" rel="noopener">Blog</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<hr style="border: 0; border-bottom: 2px solid #eee; margin-bottom: 2rem;">
+
+<article>
+    {{ .Content }}
+</article>
+{{ end }}

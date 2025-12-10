@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <a href="/posts/" style="font-size: 0.9rem;">← Back to list</a>
+    <h1 style="margin-bottom: 0.5rem;">{{ .Title }}</h1>
+    <span class="post-meta">Published on {{ .Date.Format "January 2, 2006" }}</span>
+    <hr style="border: 0; border-bottom: 1px solid #eee; margin: 2rem 0;">
+    
+    <article>
+        {{ .Content }}
+    </article>
+{{ end }}

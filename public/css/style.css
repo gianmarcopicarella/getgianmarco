@@ -1,0 +1,146 @@
+/* Import Inconsolata from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    /* CHANGED: From bright blue to a professional Dark Slate Grey */
+    --link-color: #000000; 
+    --meta-color: #666666;
+}
+
+/* Reset & Basics */
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Inconsolata', monospace; /* The core requirement */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 700px; /* Minimal width like Antirez */
+    padding: 2rem 1rem;
+}
+
+/* Typography */
+h1, h2, h3 { font-weight: 700; margin-top: 2rem; margin-bottom: 0.5rem; }
+a { 
+    color: var(--link-color); 
+    text-decoration: underline; 
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px; /* Adds a small gap between text and line for "Inconsolata" readability */
+    transition: color 0.2s ease; /* Smooth color transition */
+}
+
+a:hover { 
+    color: #000000;      /* Darkest black on hover */
+    text-decoration: none; /* REMOVES the underline on hover */
+    background-color: #f0f0f0; /* Optional: adds a subtle highlight block behind text, very "engineer" style. Remove if you prefer pure text. */
+}
+
+/* --- Post Title Overrides --- */
+a.post-title {
+    display: block;             /* Makes it sit on its own line */
+    font-size: 1.5rem;          /* Bigger */
+    font-weight: 700;           /* Bolder */
+    color: #000000;             /* Darker (Black) */
+    text-decoration: none;      /* No underline */
+    border-bottom: none;        /* REMOVE the dotted line */
+    margin-bottom: 0.2rem;
+}
+
+/* Ensure NO effect on hover for the title */
+a.post-title:hover {
+    color: #000000;             /* Stays black */
+    border-bottom: none;        /* Stays borderless */
+    background-color: transparent; /* No background highlight */
+}
+
+/* --- Social Links (Profile Page) --- */
+.social-links a {
+    font-weight: 700;           /* Bold (Matches your Name in Blog Header) */
+}
+
+p { margin-bottom: var(--spacing); }
+
+/* Landing Page Specifics */
+.profile-container { text-align: center; margin-bottom: 3rem; }
+
+/* --- Landing Page Profile (Side-by-Side) --- */
+.profile-header {
+    display: flex;          /* Enables side-by-side layout */
+    align-items: center;    /* Vertically centers the text relative to image */
+    gap: 2rem;              /* Space between image and text */
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 200px;           /* Fixed size */
+    height: 200px;
+    object-fit: cover;      /* Prevents stretching */
+    border-radius: 0;       /* Squared edges */
+    border: 1px solid #ddd; /* Minimal border for definition */
+    flex-shrink: 0;         /* Prevents image from shrinking if text is long */
+}
+
+.profile-details h1 {
+    margin-top: 0;          /* Remove top margin to align with top of image */
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;            /* Spacing between links */
+    margin: 0;
+}
+
+.social-links li {
+    margin-bottom: 0;
+}
+
+/* --- Markdown List Styling --- */
+article ul {
+    list-style-type: square; /* classic technical look */
+    padding-left: 1.2rem;    /* minimal indentation */
+    margin-bottom: 2rem;
+}
+
+article li {
+    margin-bottom: 1rem;     /* breathing room between projects */
+}
+
+/* Ensure bold links inside lists align with your aesthetic */
+article li a strong {
+    color: #000;             /* Enforce black color */
+    /* Dotted underline inherits from global 'a' */
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 600px) {
+    .profile-header {
+        flex-direction: column; /* Stack vertically on phones */
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center; /* Center links on phones */
+    }
+}
+
+/* Blog List Specifics (Antirez Style) */
+.post-item { margin-bottom: 2rem; }
+.post-meta { color: var(--meta-color); font-size: 0.9em; display: block; margin-top: 0.2rem;}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+    body { padding: 1rem; font-size: 16px; }
+}
