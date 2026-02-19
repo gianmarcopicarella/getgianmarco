@@ -4,7 +4,7 @@ title: "Home"
 
 ## Background
 
-Since February 2026, I am working as a Software Engineer at Google Warsaw, specifically on Chrome.
+Since February 2026, I am working as a Software Engineer at Google Warsaw.
 
 In June 2025, I obtained a **[Master's Degree](https://www.uu.nl/en/masters/game-and-media-technology)** in Computer Science *cum laude* from Utrecht University. **[My thesis](https://studenttheses.uu.nl/handle/20.500.12932/48903)**, titled "Finding dense and well-shaped convex clusters in 2-dimensional point sets", addressed the problem of computing a convex region with bounded area and diameter that contains the maximum number of points from a given set. In collaboration with my supervisors Marc van Kreveld, Frank Staals, and Sjoerd de Vries, we designed, implemented, and tested a novel geometric algorithm that solves this problem in O(n⁶k) time and O(n³k) space. This work has been **[published](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESA.2025.23)** in the volume **[33rd Annual European Symposium on Algorithms (ESA 2025)](https://algo-conference.org/2025/)** on October 1st, 2025. On September 12th 2025, I had the chance to **[present](https://getgianmarco.com/slides_warsaw.pdf)** our work at ESA ALGO 2025 in Warsaw. While working on my thesis, I also participated in the **[Utrecht University Business Course (UUBC)](https://uubc.nl/)**, a 12-week honours programme selected for the top 30 Master's students university-wide seeking practical experience in entrepreneurship and consultancy.
 
