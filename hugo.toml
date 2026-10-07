@@ -9,7 +9,6 @@ theme = []
   github = "https://www.github.com/gianmarcopicarella"
   linkedin = "https://www.linkedin.com/in/gianmarcopicarella/"
   cv = "https://www.getgianmarco.com/picarella_gianmarco_cv.pdf"
-  blog = "https://www.gianmarcopicarella.substack.com/"
 
 uglyURLs = false
 
